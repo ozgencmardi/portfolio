@@ -2,12 +2,18 @@
   box-sizing: border-box;
 }
 
+:root{
+  --bg-color: #31343c;
+  --green-color: #9ecacc;
+  --color: #485874;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  color: #485874;
+  color: var(--color);
 }
 
 html {
@@ -32,7 +38,7 @@ a {
 }
 
 .navbar {
-  background: #31343c;
+  background: var(--bg-color);
   height: 100px;
 }
 
@@ -44,8 +50,8 @@ a {
 }
 
 .navbar h1 {
-  background: #9ecacc;
-  color: #31343c;
+  background: var(--green-color);
+  color: var(--bg-color);
   font-size: 40px;
   padding-right: 10px;
 }
@@ -71,14 +77,14 @@ nav li {
 }
 
 nav a {
-  color: #9ecacc;
+  color: var(--green-color);
   font-size: 20px;
   display: block;
   text-decoration: none;
 }
 
 nav ul li a {
-  color: #9ecacc;
+  color: var(--green-color);
   display: block;
   text-decoration: none; 
   position: relative; 
@@ -93,7 +99,7 @@ nav ul li a:after {
   left: 0;
   right: 0;
   width: 100%;
-  background: #9ecacc; 
+  background: var(--green-color);
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -103,7 +109,7 @@ nav ul li a:after {
 
 nav ul li a:hover:after {
   width: 60%;
-  background: #9ecacc;
+  background: var(--green-color);
 }
 
 nav li:hover a {
@@ -157,7 +163,7 @@ nav li ul a:hover {
 }
 
 .hero-banner .banner {
-  background: #9ecacc; 
+  background: var(--green-color);
   position: relative;
   float: right;
   padding: 5px;
@@ -167,7 +173,7 @@ nav li ul a:hover {
 
 .hero-banner h2 {
   font-size: 30px;
-  color: #31343c;
+  color: var(--bg-color);
 }
 
 #about, #work, #contact {
@@ -186,7 +192,7 @@ nav li ul a:hover {
 
 .center {
   flex-basis: 3%;
-  border-left: 5px solid #485874;
+  border-left: 5px solid var(--color);;
   margin: 0px 10px 0px 30px;
 }
 
@@ -196,7 +202,7 @@ nav li ul a:hover {
 }
 
 h2 {
-  color: #485874;
+  color: var(--color);;
   font-size: 50px;
 }
 
@@ -215,7 +221,7 @@ h2 {
   cursor: pointer;
   display: grid;
   align-content: end;
-  border: 10px solid #9ecbcc; 
+  border: 10px solid var(--green-color);
 }
 
 #surf-report {
@@ -264,16 +270,16 @@ h2 {
 }
 
 .headingMain {
-  background-color: #9ecacc; 
+  background-color: var(--green-color);
   padding: 15px;
   height: 100px;
   width: 240px;
   margin-top: -150px;
-  color: #31343c;
+  color: var(--bg-color);
 }
 
 .heading {
-  background-color: #9ecacc; 
+  background-color: var(--green-color);
   padding: 15px;
   height: 100px;
   width: 240px;
@@ -312,14 +318,14 @@ h2 {
 }
 
 .menu a {
-  color: #485874;
+  color: var(--color);;
   font-size: 24px;
   display: block;
   text-decoration: none;
 }
 
 .menu ul li a {
-  color: #485874;
+  color: var(--color);;
   display: block;
   text-decoration: none; 
   position: relative; 
@@ -334,7 +340,7 @@ h2 {
   left: 0;
   right: 0;
   width: 100%;
-  background: #485874;
+  background: var(--color);;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -344,7 +350,7 @@ h2 {
 
 .menu ul li a:hover:after {
   width: 60%;
-  background: #485874;
+  background: var(--color);;
 }
 
 .menu li:hover a {
